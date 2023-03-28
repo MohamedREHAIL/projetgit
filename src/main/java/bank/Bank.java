@@ -7,7 +7,7 @@ public class Bank {
     public List<Account>accounts;
 
     public Bank(){
-        accounts=new ArrayList<Account>();
+        this.accounts=new ArrayList<Account>();
     }
 
     public void addAccount(Account account) {
@@ -18,14 +18,21 @@ public class Bank {
         accounts.remove(account);
     }
 
-    public void AfficherSolde() {
+
+
+    public String AfficherSolde() {
+        String str="";
         for (Account account : accounts) {
-            System.out.println("Account " + account.getId() + ": " + account.getSolde());
+            str+=("Account " + account.getId() + ": " + account.getSolde());
         }
+        return str;
     }
 
     public void transfer(Account source, Account destination, double somme) {
         source.transfer(destination, somme);
+    }
+    public List<Account> getAccounts() {
+        return accounts;
     }
 
 }
