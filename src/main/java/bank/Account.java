@@ -1,9 +1,9 @@
 package bank;
 
 public class Account {
-    public String id;
-    public double solde;
-    public double tauxInteret;
+    private String id;
+   private double solde;
+   private double tauxInteret;
 
 
     public Account(String id, double solde, double tauxInteret) {

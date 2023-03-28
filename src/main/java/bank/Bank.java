@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
-    public List<Account>accounts;
+    private List<Account>accounts;
 
     public Bank(){
-        this.accounts=new ArrayList<Account>();
+        this.accounts=new ArrayList<>();
     }
 
     public void addAccount(Account account) {
