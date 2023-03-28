@@ -37,7 +37,5 @@ public class Book {
         this.dateDePub = dateDePub;
     }
 
-    public static void main(String[] args) {
-        System.out.println(LocalDate.now());
-    }
+
 }
